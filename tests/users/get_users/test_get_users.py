@@ -1,21 +1,28 @@
+import pytest
+
 from src.baseclasses.Response import Response
 
 from src.enums.global_enums import *
 from src.pydantic_schemas.user import User
 
 
+@pytest.mark.development
 def test_status_getting_users(get_users):
     Response(get_users).assert_status_code(200)
 
 
+@pytest.mark.development
 def test_status_getting_user(get_user):
     Response(get_user).assert_status_code(200)
 
 
+@pytest.mark.development
 def test_status_getting_null_user(get_null_user):
     Response(get_null_user).assert_status_code(404)
 
 
+@pytest.mark.development
+@pytest.mark.production
 def test_count_getting_users(get_users):
     received_users_data = Response(get_users).response_json
 
@@ -27,7 +34,9 @@ def test_count_getting_users(get_users):
 #     response = Response(r)
 #
 #     response.validate(USER_SCHEMA)
-#
 
+
+@pytest.mark.development
+@pytest.mark.production
 def test_validate_user_data_with_pydantic(get_user):
     Response(get_user).validate(User)
