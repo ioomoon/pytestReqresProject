@@ -1,6 +1,6 @@
 # Тренировочный проект автотестов на API REQRES (https://reqres.in/)
 
-<img align="center" src="https://github.com/ioomoon/pytestReqresProject/blob/master/img/reqres.png" width="300">
+<img align="center" src="https://github.com/ioomoon/pytestReqresProject/blob/master/img/reqres.png">
 
 
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon5.png?raw=true" width="25"> Реализованы проверки:
