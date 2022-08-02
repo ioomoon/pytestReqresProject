@@ -1,5 +1,11 @@
 SERVICE_URL = "https://reqres.in/"
-GET_USERS = "api/users"
-GET_USER = "api/users/2"
-GET_NULL_USER = "api/users/555"
+USERS = "api/users"
+USER = "api/users/2"
+NULL_USER = "api/users/555"
+
+
+TEST_USER = {
+    "name": "morpheus",
+    "job": "leader"
+}
 

@@ -1,11 +1,6 @@
-import requests
-
 from src.baseclasses.Response import Response
 
-from configuration import *
-
 from src.enums.global_enums import *
-from src.json_schemas.user import USER_SCHEMA
 from src.pydantic_schemas.user import User
 
 
@@ -35,4 +30,4 @@ def test_count_getting_users(get_users):
 #
 
 def test_validate_user_data_with_pydantic(get_user):
-   Response(get_user).validate(User)
+    Response(get_user).validate(User)

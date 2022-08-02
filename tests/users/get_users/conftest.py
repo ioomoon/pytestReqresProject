@@ -10,17 +10,17 @@ from configuration import *
 
 @pytest.fixture()
 def get_users():
-    response = requests.get(url=SERVICE_URL + GET_USERS)
+    response = requests.get(url=SERVICE_URL + USERS)
     return response
 
 
 @pytest.fixture()
 def get_user():
-    response = requests.get(url=SERVICE_URL + GET_USER)
+    response = requests.get(url=SERVICE_URL + USER)
     return response
 
 
 @pytest.fixture()
 def get_null_user():
-    response = requests.get(url=SERVICE_URL + GET_NULL_USER)
+    response = requests.get(url=SERVICE_URL + NULL_USER)
     return response
