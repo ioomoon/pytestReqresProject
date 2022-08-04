@@ -18,3 +18,8 @@ API:
 ```bash
 pytest -v -k development tests
 ```
+
+## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon6.png?raw=true" width="25"> Отчеты в Allure Report
+![](img/status_severity.png "status_severity")
+![](img/retries.png "retries")
+![](img/suites.png "suites")
